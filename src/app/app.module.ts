@@ -6,7 +6,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DashboardComponent } from './dashboard/dashboard.component'
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 
 export const appRoutes: Routes = [
   { path: '', component: DashboardComponent }
@@ -22,6 +24,8 @@ export const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatIconModule,
+    MatInputModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
