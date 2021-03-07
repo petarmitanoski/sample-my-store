@@ -1,0 +1,22 @@
+<div class="card-holder" *ngFor="let item of items">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{item.name}}</mat-card-title>
+          <mat-card-subtitle>{{item.location}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            Nullam varius diam at viverra aliquet. Mauris eget elit lectus. 
+            Cras eget dignissim nunc, a molestie est. Nullam aliquam mauris eu lectus malesuada tristique. 
+            Ut lacinia diam quis lectus porta lacinia. Aenean egestas, urna vel ullamcorper euismod, odio metus vestibulum odio, 
+            id gravida neque ligula non libero.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+          <button mat-button>SUBSCRIBE</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

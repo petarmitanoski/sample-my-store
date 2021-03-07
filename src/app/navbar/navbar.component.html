@@ -1,3 +1,28 @@
-<mat-toolbar class="primary">
-<mat-icon>construction</mat-icon>
-</mat-toolbar>
+<div class="navbar">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-icon-button fxShow="true" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <a href="" mat-button>My Store</a>
+        <div fxShow="true" fxHide.lt-md>
+          <a href="#" mat-button>About Us</a>
+          <a href="#" mat-button>Contact</a>
+        </div>
+        <span class="menu-spacer"></span>
+        <a href="#" mat-button>Log in</a>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  
+    <!-- <mat-sidenav-container fxFlexFill>
+      <mat-sidenav #sidenav>
+        <mat-nav-list>
+          <a href="#" mat-list-item>About Us</a>
+          <a href="#" mat-list-item>Contact</a>
+          <a href="#" mat-list-item>Log in</a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>Main content</mat-sidenav-content>
+    </mat-sidenav-container> -->
+  </div>
+  
