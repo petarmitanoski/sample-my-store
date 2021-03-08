@@ -1,3 +1,5 @@
+<div class="container">
+<app-filter></app-filter>
 <div class="card-holder" *ngFor="let item of items">
     <mat-card class="example-card">
         <mat-card-header>
@@ -13,10 +15,12 @@
             id gravida neque ligula non libero.
           </p>
         </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-          <button mat-button>SUBSCRIBE</button>
+        <mat-card-actions class="row">
+          <mat-chip-list class="example-chip" #chipList aria-label="Competence selection">
+            <mat-chip class="example-box" *ngFor="let competence of item.competences"> {{ competence }}</mat-chip>
+          </mat-chip-list>
         </mat-card-actions>
+        <button mat-button>Hire</button>
     </mat-card>
+</div>
 </div>

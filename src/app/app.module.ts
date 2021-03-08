@@ -14,6 +14,9 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatButtonModule } from '@angular/material/button';
 import { ContractorsComponent } from './contractors/contractors.component';
 import { MatCardModule } from '@angular/material/card';
+import { FilterComponent } from './filter/filter.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatChipsModule } from '@angular/material/chips';
 
 export const appRoutes: Routes = [
   { path: '', component: DashboardComponent }
@@ -24,7 +27,8 @@ export const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     DashboardComponent,
-    ContractorsComponent
+    ContractorsComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,9 @@ export const appRoutes: Routes = [
     MatListModule,
     FlexLayoutModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

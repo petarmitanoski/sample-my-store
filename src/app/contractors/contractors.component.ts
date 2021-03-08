@@ -4,6 +4,7 @@ class Contractor {
   name: string;
   location: string;
   rating: string;
+  competences: string[];
 }
 
 @Component({
@@ -23,27 +24,43 @@ export class ContractorsComponent implements OnInit {
       {
         name: "Eden",
         location: "Skopje",
-        rating: "5"
+        rating: "5",
+        competences: [
+          "electrician"
+        ]
       },
       {
         name: "Dva",
         location: "Skopje",
-        rating: "5"
+        rating: "5",
+        competences: [
+          "electrician",
+          "tiler"
+        ]
       },
       {
         name: "Tri",
         location: "Skopje",
-        rating: "5"
+        rating: "5",
+        competences: [
+          "electrician"
+        ]
       },
       {
         name: "Cetiri",
         location: "Skopje",
-        rating: "5"
+        rating: "5",
+        competences: [
+          "tiler"
+        ]
       },
       {
         name: "Pet",
         location: "Skopje",
-        rating: "5"
+        rating: "5",
+        competences: [
+          "electrician"
+        ]
       }
     ];
   }

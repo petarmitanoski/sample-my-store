@@ -1,0 +1,13 @@
+.test {
+    display: inline;
+    padding-left: 300px;
+}
+
+.search {
+    width: 31.5%;
+    padding-right: 10px;
+}
+
+.button {
+    height: 5%;
+}
